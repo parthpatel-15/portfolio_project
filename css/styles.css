@@ -1,51 +1,202 @@
 /* Global style 
 ------------------------------------------------------*/
+html{
+  box-sizing: border-box;
+}
+* , *::before, *::after{
+  box-sizing: inherit;
+}
+body{
+  padding: 0;
+  margin: 0;
 
+}
 #main{
-    background-color: rgb(97, 116, 156);
+    background-color: #52585A;
   
   }
   p,li{
     color: #BAB3B6;
+    font-family: Bradley Hand, cursive;
+    font-size: 20px ;
   }
   h3{
     color:#AC9CA8;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   h2{
+    text-decoration:solid;
     color: #de9c01;
+    width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
   }
-   #name{
-     color:#eda36e;
+  
 
-   }
+   .content-wrap{
+    width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
+    
+  }
+   
+  .devider section{
+    border-bottom: 1px dashed #BAB3B6;
+    padding-bottom: 5px;
+
+  }
+  .devider section:last-of-type{
+    border-bottom: none;
+  }
 
 
 
+/* About style 
+------------------------------------------------------*/
+#name{
+  color:#eda36e;
+  
+  text-decoration: underline;
+  text-align: center;
+  font-style: italic;
+  font-family: Stencil Std, fantasy;
+  font-variant: initial;
+
+}
+#about{
+  background-color:#4E6D8B;
+  padding: 10px 40px 10px 40px;
+  
+  
+}
+
+#about .content-wrap{
+  border: 5px inset #eda36e;
+  border-radius: 10px;
+  padding: 60px 10px;
+}
 
 
-/* Global style 
+/* Skills style 
+------------------------------------------------------*/
+#skills{
+  background-color: #7F6467;
+}
+
+#skills li{
+ margin-bottom:10px ;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Project style 
 ------------------------------------------------------*/
 
+#project{
+  background-color:#545372;
+  
+  
+  border-radius: 10px;
+}
+/*
+.project_items{
+  border-bottom: 1px dashed #BAB3B6;
+  padding-bottom: 5px;
+} */
+.project_items h3{
+  color:rgb(70, 3, 112);
+  text-decoration:wavy;
+}
+
+/* Work Experince style 
+------------------------------------------------------*/
+#work_exp{
+  background-color:#125195;
+  
+  
+  border-radius: 10px;
+}
+.job-item li{
+  margin-bottom: 10px;
+}
+
+.job-item p{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: medium;
+  margin: 10px;
+}
+
+.job-item h3{
+  font-size: 22px;
+}
+
+
+.job-item{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  
+}
 
 
 
 
-/* Global style 
+
+
+/* Education style 
+------------------------------------------------------*/
+#education{
+  background-color:#A75033;
+  
+  
+  border-radius: 10px;
+}
+
+ #education p {
+  color: black;
+  font-family: Bradley Hand, cursive;
+  font-size: 20px ;
+  margin: 10px 10px;
+}
+
+#education div + p {
+  color: black;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.education_details{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.education_details p{
+  padding-top: 8px;
+}
+
+
+/* Contact style 
 ------------------------------------------------------*/
 
+#contact{
+  background-color:#52585A;
+  
+  
+  border-radius: 10px;
+}
 
+.contact_item{
+  list-style-type:none;
+  padding:0;
+  display : flex;
 
+  width: auto;
+  justify-content: center;
 
-/* Global style 
-------------------------------------------------------*/
+}
 
-
-
-
-/* Global style 
-------------------------------------------------------*/
-
-
-
-/* Global style 
-------------------------------------------------------*/
+.contact_item a{
+  padding: 0 30px;
+}
